@@ -1,0 +1,37 @@
+/***
+ * Author: Muhammad Saif
+ * Roll Number: 22SW129
+ * Submission to: Dr. Mohsin Ali Memon
+ *
+ * Description:
+ * This Java program demonstrates a system for managing meetings, participants, and refreshments. It uses interfaces,
+ * classes, and multithreading to provide functionality for creating, saving, and loading meeting and participant data
+ * to/from files. It also simulates serving refreshments to participants.
+
+ * Interfaces:
+ * - `Eat`: Defines methods for serving refreshments to participants and providing a string representation.
+ * - `SerializableToFile`: Defines methods for saving and loading objects to/from files.
+
+ * Classes:
+ * - `Meeting`: Represents a meeting with properties like title, date, location, and agenda items.
+ *   - Methods: addAgendaItem(), displayMeetingDetails()
+ * - `Participant`: Represents a participant with properties like age, name, and email.
+ *   - Methods: consumeRefreshments()
+ * - `Refreshment`: Represents refreshments with properties like coffee, water, and snacks.
+ *   - Methods: serveRefreshments()
+ * - `FileOperationThread`: Extends Thread and performs file operations (save/load) in separate threads.
+
+ * Main Class:
+ * - `Main`: Entry point of the program. Demonstrates the usage of the above classes and interfaces.
+ *   - Creates meetings, participants, and refreshments.
+ *   - Saves and loads data to/from files using multithreading.
+
+ * Usage:
+ * - Compile and run the program to interact with meetings, participants, and refreshments.
+ * - Data is saved to and loaded from files using separate threads.
+
+ * Note:
+ * - This code provides a basic example of file I/O and object serialization in Java.
+ * - Error handling is simplified for demonstration purposes and may need enhancement for production use.
+ */
+
